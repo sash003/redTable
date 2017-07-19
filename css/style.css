@@ -1,0 +1,98 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #3a3c39;
+  color: white;
+  font-size: 21px;
+}
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+::selection {
+  background: #3a9289;
+  color: inherit;
+  text-shadow: none;
+}
+::-moz-selection{
+  background: #3a9289;
+  color: inherit;
+  text-shadow: none;
+}
+h1 {
+  text-align: center;
+}
+#tableWrap{
+  margin: auto;
+}
+table {
+  border-collapse: collapse; /* Убираем двойные линии между ячейками */
+  margin: auto;
+  min-width: 70%;
+}
+thead td{
+  padding: 13px;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+td {
+  text-align: center;
+  padding: 7px;
+  border: 1px solid #ec9513;
+}
+thead td:hover > .reddel{
+  display: block;
+}
+.reddel{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+#addWrap{
+  position: absolute;
+  top: -11px;
+  left: 0;
+  padding: 11px;
+  text-align: center;
+  z-index: 2;
+}
+#addColumn, #addRow{
+  background: black;
+  color: #608107;
+  margin: 11px auto;
+  margin-top: 11px;
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px white;
+  padding: 7px;
+  text-align: center;
+  cursor: pointer;
+}
+#addColumnDo, #delColumn, #delRow{
+  text-align: center;
+  display: none;
+  position: fixed;
+  z-index: 3;
+  left: 44%;
+  background: white;
+  color: black;
+  padding: 55px;
+  border-radius: 7px;
+}
+#addCol, #delCol, #delRowConf{
+  border: 2px solid #769c75;
+  border-radius: 5px;
+  padding: 7px;
+  cursor: pointer;
+}
+#colName, #colType{
+  padding: 5px;
+  min-height: 21px;
+  min-width: 33px;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+tbody td:first-child:hover > .reddel{
+  display: block;
+}
