@@ -1,5 +1,5 @@
 <?php
-//г. Винница ул. Гудвина 52/21 (000) 000-00-00
+
 error_reporting(E_ALL);
 
 $root = __DIR__."/../config";
@@ -9,6 +9,7 @@ require 'Connect.php';
 if(isset($_POST['func'])){
   $func = escapeStr($_POST['func']);
   $func();
+  $db = null;
 }
 
 
